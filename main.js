@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setInitialTheme();
 
-  fetch('api.json')
+  fetch('./api.json')
     .then(response => response.json())
     .then(data => {
       data.questions.forEach(item => {
